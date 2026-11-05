@@ -36,3 +36,12 @@ npm run preview
 La aplicación mantiene controles de tamaño de texto y alto contraste, navegación por teclado, etiquetas accesibles y alternativas de lectura. La voz depende de las funciones de síntesis de voz del navegador. El centro multimedia de esta entrega incluye audio generado por el navegador y transcripciones; los videos subtitulados, audiodescripción y contenidos en Lengua de Señas Colombiana quedan identificados como una siguiente incorporación, para no presentar materiales inexistentes como disponibles.
 
 El contenido es educativo y no sustituye valoración, diagnóstico ni atención profesional. Los contenidos anatómicos son esquemáticos y no deben utilizarse para autodiagnóstico.
+
+
+## Versión 3.1 — Biblioteca visual interactiva
+
+- Sustituye la silueta genérica por una biblioteca visual con ilustraciones SVG educativas.
+- Incluye vistas de cuerpo general, movimiento, intimidad y bienestar, autocuidado y salud sexual.
+- En Anatomía permite cambiar entre cuerpo general y esquemas simplificados de los sistemas reproductores femenino y masculino.
+- Los elementos seleccionables actualizan explicaciones en pantalla y cuentan con etiquetas accesibles.
+- Los diagramas son esquemáticos, no representan todas las variaciones anatómicas y no sustituyen la orientación profesional.
