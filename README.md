@@ -26,3 +26,9 @@ La información es educativa y no sustituye una consulta individual con profesio
 - Se separaron las ilustraciones de cuerpo general, sistema reproductor femenino y sistema reproductor masculino en archivos PNG independientes dentro de `public/`.
 - En Vista general y Anatomía, cada ilustración tiene una tarjeta seleccionable y muestra su propia imagen y explicación.
 - Se mantiene la navegación y el contenido de Autocuidado y Salud sexual.
+
+
+## Correcciones v3.6
+- Vista general muestra únicamente el cuerpo general; los sistemas reproductores se consultan en Anatomía.
+- Ilustración masculina actualizada: las etiquetas de pene y uretra señalan estructuras distintas y el conducto deferente está identificado por separado.
+- Lectura asistida con escuchar, pausar/reanudar y detener en Simulador, Biblioteca, Guía de consulta y Centro multimedia.
