@@ -16,3 +16,10 @@ Aplicación educativa accesible sobre el derecho a recibir información de salud
 4. Vercel debe iniciar un nuevo despliegue automáticamente.
 
 Comandos locales: `npm install` y `npm run build`.
+
+
+## Versión 2.1 – Correcciones de accesibilidad
+- Navegación: la sección activa ahora queda resaltada correctamente.
+- Lectura: los controles muestran estado activo; pausa cambia a reproducir y permite continuar.
+- Detener: cancela la lectura y reinicia la posición para la siguiente reproducción.
+- Tamaño de texto: A− y A+ escalan los tamaños tipográficos de la interfaz.
