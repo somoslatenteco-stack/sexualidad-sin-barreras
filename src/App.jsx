@@ -67,9 +67,53 @@ function V3Features({page,go}){
   {body==='anatomia'&&<>
    <div className="anatomy-tabs">{[['piel','Cuerpo general'],['femenino','Sistema reproductor femenino'],['masculino','Sistema reproductor masculino']].map(([v,l])=><button key={v} className={bodyPart===v?'active':''} onClick={()=>setBodyPart(v)}>{l}</button>)}</div>
    <div className="anatomy-board">
-    {bodyPart==='piel'&&<svg viewBox="0 0 520 300" role="img" aria-label="Ilustración esquemática de cuerpo humano con órganos principales"><circle cx="250" cy="40" r="25"/><path d="M215 76 Q250 60 285 76 L306 165 L280 171 L274 122 L274 205 L292 280 L263 280 L250 215 L237 280 L208 280 L226 205 L226 122 L220 171 L194 165Z"/><path d="M215 82 L166 170 M285 82 L334 170"/><path d="M231 104 Q250 91 269 104 L269 159 Q250 172 231 159Z" fill="#e6b7d9"/><path d="M240 177 Q250 164 260 177 L260 194 Q250 204 240 194Z" fill="#e6b7d9"/><g stroke="#8a35a4" strokeWidth="2" fill="none"><path d="M275 118 H390 M260 185 H390 M215 140 H100"/></g><g fill="#54216f" fontSize="15" fontWeight="600"><text x="398" y="122">Tórax</text><text x="398" y="190">Abdomen</text><text x="35" y="145">Extremidades</text></g></svg>}
-    {bodyPart==='femenino'&&<svg viewBox="0 0 520 300" role="img" aria-label="Esquema educativo del sistema reproductor femenino"><path d="M250 135 C215 95 170 98 145 122 M270 135 C305 95 350 98 375 122" fill="none" stroke="#8d55a5" strokeWidth="12" strokeLinecap="round"/><path d="M250 118 C210 145 212 205 250 220 C288 205 290 145 250 118Z" fill="#e7a9c9" stroke="#873c9d" strokeWidth="4"/><path d="M250 220 V264" stroke="#873c9d" strokeWidth="12" strokeLinecap="round"/><ellipse cx="135" cy="126" rx="18" ry="25" fill="#d6a5e5" stroke="#873c9d" strokeWidth="3"/><ellipse cx="385" cy="126" rx="18" ry="25" fill="#d6a5e5" stroke="#873c9d" strokeWidth="3"/><g stroke="#8a35a4" strokeWidth="2" fill="none"><path d="M250 143 H420 M250 185 H420 M250 244 H420 M135 126 H70"/></g><g fill="#54216f" fontSize="14" fontWeight="600"><text x="427" y="147">Útero</text><text x="427" y="190">Cuello uterino</text><text x="427" y="249">Vagina</text><text x="18" y="115">Ovario</text></g></svg>}
-    {bodyPart==='masculino'&&<svg viewBox="0 0 520 300" role="img" aria-label="Esquema educativo del sistema reproductor masculino"><path d="M250 70 C210 95 212 150 235 170 L235 220 Q250 240 265 220 L265 170 C288 150 290 95 250 70Z" fill="#e7a9c9" stroke="#873c9d" strokeWidth="4"/><path d="M235 170 Q200 180 210 225 M265 170 Q300 180 290 225" fill="none" stroke="#873c9d" strokeWidth="7"/><ellipse cx="210" cy="238" rx="19" ry="25" fill="#d6a5e5" stroke="#873c9d" strokeWidth="3"/><ellipse cx="290" cy="238" rx="19" ry="25" fill="#d6a5e5" stroke="#873c9d" strokeWidth="3"/><path d="M250 70 V35" stroke="#873c9d" strokeWidth="7"/><g stroke="#8a35a4" strokeWidth="2" fill="none"><path d="M250 47 H390 M274 115 H390 M290 238 H390"/></g><g fill="#54216f" fontSize="14" fontWeight="600"><text x="398" y="52">Conductos deferentes</text><text x="398" y="120">Próstata y uretra</text><text x="398" y="243">Testículos</text></g></svg>}
+    {bodyPart==='piel'&&<svg viewBox="0 0 680 340" role="img" aria-label="Esquema frontal del cuerpo humano con cabeza, tórax, abdomen, pelvis y extremidades">
+      <circle cx="260" cy="48" r="27"/>
+      <path d="M220 88 Q260 70 300 88 L318 180 L290 188 L285 145 L285 226 L305 310 L270 310 L260 238 L250 310 L215 310 L235 226 L235 145 L230 188 L202 180Z"/>
+      <path d="M220 96 L168 202 M300 96 L352 202" fill="none"/>
+      <path d="M238 112 Q260 100 282 112 L282 170 Q260 183 238 170Z" fill="#e6b7d9"/>
+      <path d="M246 190 Q260 178 274 190 L274 218 Q260 230 246 218Z" fill="#e6b7d9"/>
+      <g stroke="#8a35a4" strokeWidth="2" fill="none"><path d="M282 137 H425 M274 204 H425 M220 170 H110 M260 225 V270"/></g>
+      <g fill="#54216f" fontSize="15" fontWeight="600"><text x="435" y="142">Tórax</text><text x="435" y="209">Abdomen</text><text x="25" y="175">Extremidades</text><text x="270" y="285">Pelvis</text></g>
+    </svg>}
+    {bodyPart==='femenino'&&<svg viewBox="0 0 680 340" role="img" aria-label="Esquema frontal del sistema reproductor femenino con ovarios, trompas uterinas, útero, cuello uterino y vagina">
+      <g fill="none" stroke="#8d55a5" strokeWidth="9" strokeLinecap="round">
+        <path d="M270 125 C235 90 195 93 165 120 C150 132 144 143 138 151"/>
+        <path d="M310 125 C345 90 385 93 415 120 C430 132 436 143 442 151"/>
+      </g>
+      <g fill="#d6a5e5" stroke="#873c9d" strokeWidth="3">
+        <ellipse cx="128" cy="160" rx="22" ry="29"/><ellipse cx="452" cy="160" rx="22" ry="29"/>
+      </g>
+      <g fill="#e7a9c9" stroke="#873c9d" strokeWidth="4" strokeLinejoin="round">
+        <path d="M290 116 C264 137 251 163 254 194 C256 222 270 240 290 250 L290 270 L310 270 L310 250 C330 240 344 222 346 194 C349 163 336 137 310 116 Q300 106 290 116Z"/>
+        <path d="M290 250 L290 270 Q300 281 310 270 L310 250Z"/>
+      </g>
+      <path d="M300 279 V318" stroke="#873c9d" strokeWidth="13" strokeLinecap="round"/>
+      <g stroke="#8a35a4" strokeWidth="2" fill="none">
+        <path d="M128 160 H65 M175 122 H65 M335 164 H500 M310 260 H500 M300 300 H500"/>
+      </g>
+      <g fill="#54216f" fontSize="15" fontWeight="600">
+        <text x="12" y="155">Ovario</text><text x="12" y="115">Trompa uterina</text>
+        <text x="510" y="169">Útero</text><text x="510" y="265">Cuello uterino</text><text x="510" y="305">Vagina</text>
+      </g>
+    </svg>}
+    {bodyPart==='masculino'&&<svg viewBox="0 0 680 340" role="img" aria-label="Esquema frontal simplificado del sistema reproductor masculino con vejiga, conductos deferentes, próstata, uretra, pene, testículos y escroto">
+      <path d="M260 65 Q300 35 340 65 Q354 82 346 111 Q300 130 254 111 Q246 82 260 65Z" fill="#d6a5e5" stroke="#873c9d" strokeWidth="4"/>
+      <path d="M270 117 Q245 145 255 171 Q270 188 300 188 Q330 188 345 171 Q355 145 330 117" fill="#e7a9c9" stroke="#873c9d" strokeWidth="4"/>
+      <path d="M275 188 Q270 205 270 220 L270 286 Q300 306 330 286 L330 220 Q330 205 325 188" fill="#e7a9c9" stroke="#873c9d" strokeWidth="4"/>
+      <path d="M300 117 V287" fill="none" stroke="#8b35a5" strokeWidth="5"/>
+      <path d="M260 270 Q230 248 222 276 L222 296 M340 270 Q370 248 378 276 L378 296" fill="none" stroke="#873c9d" strokeWidth="7"/>
+      <ellipse cx="222" cy="300" rx="20" ry="27" fill="#d6a5e5" stroke="#873c9d" strokeWidth="4"/>
+      <ellipse cx="378" cy="300" rx="20" ry="27" fill="#d6a5e5" stroke="#873c9d" strokeWidth="4"/>
+      <path d="M222 273 C205 220 230 175 260 150 M378 273 C395 220 370 175 340 150" fill="none" stroke="#8d55a5" strokeWidth="6"/>
+      <g stroke="#8a35a4" strokeWidth="2" fill="none">
+        <path d="M340 80 H480 M345 153 H480 M330 202 H480 M300 250 H480 M378 300 H480"/>
+      </g>
+      <g fill="#54216f" fontSize="14" fontWeight="600">
+        <text x="490" y="85">Vejiga urinaria</text><text x="490" y="158">Conductos deferentes</text>
+        <text x="490" y="207">Próstata</text><text x="490" y="255">Uretra y pene</text><text x="490" y="305">Testículos y escroto</text>
+      </g>
+    </svg>}
    </div>
    <p className="diagram-note">Esquemas simplificados con fines educativos. No representan todas las variaciones anatómicas ni sustituyen una explicación profesional.</p>
   </>}
