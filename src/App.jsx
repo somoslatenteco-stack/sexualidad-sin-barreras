@@ -37,7 +37,8 @@ function V3Features({page,go}){
  const [checked,setChecked]=React.useState([]);
  const [notes,setNotes]=React.useState('');
  const [media,setMedia]=React.useState('derechos');
- const [playing,setPlaying]=React.useState(false);\n const [paused,setPaused]=React.useState(false);
+ const [playing,setPlaying]=React.useState(false);
+ const [paused,setPaused]=React.useState(false);
  const [body,setBody]=React.useState('general');
  const [bodyPart,setBodyPart]=React.useState('cuerpo');
  const speak=(text)=>{if(!('speechSynthesis'in window)){alert('Tu navegador no permite lectura en voz alta.');return;}window.speechSynthesis.cancel();const u=new SpeechSynthesisUtterance(text);u.lang='es-CO';u.rate=.9;u.onend=()=>{setPlaying(false);setPaused(false);};u.onerror=()=>{setPlaying(false);setPaused(false);};window.speechSynthesis.speak(u);setPlaying(true);setPaused(false);};
