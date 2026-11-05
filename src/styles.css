@@ -49,3 +49,18 @@ nav button:focus-visible,.listen button:focus-visible,.tools button:focus-visibl
 .anatomy-infographic img{display:block;width:100%;height:auto;max-width:100%;border-radius:14px}
 .anatomy-infographic figcaption{padding:10px 8px 2px;color:#76518b;font-size:.88rem;text-align:center}
 @media(max-width:650px){.anatomy-infographic{padding:6px;border-radius:14px}.anatomy-infographic figcaption{font-size:.78rem}}
+
+/* Biblioteca 3.4: controles seleccionables y paneles de contenido */
+.visual-card { cursor: pointer; font: inherit; color: inherit; }
+.visual-card:focus-visible, .v3-tabs button:focus-visible, .anatomy-tabs button:focus-visible { outline: 3px solid #6f2395; outline-offset: 3px; }
+.visual-card .topic-icon { display:flex; align-items:center; justify-content:center; width:112px; height:112px; margin:0 auto 14px; border-radius:26px; background:#efd9f7; color:#842ba5; font-size:68px; line-height:1; font-weight:600; }
+.topic-detail { margin-top:22px; padding:24px 28px; border:1px solid #e7c9f1; border-radius:20px; background:#fff; color:#45205f; }
+.topic-detail h3 { margin:0 0 12px; color:#42135f; font-size:1.35rem; }
+.topic-detail p { line-height:1.75; }
+.topic-detail ul { padding-left:22px; line-height:1.8; }
+.topic-detail li { margin:7px 0; }
+.topic-detail .detail-note { padding:12px 15px; border-radius:12px; background:#f5eafa; font-size:.94rem; }
+.overview-infographic { margin-top:20px; }
+.overview-infographic img { display:block; width:100%; height:auto; border-radius:18px; }
+.anatomy-infographic img { display:block; width:100%; height:auto; }
+@media(max-width:700px){ .topic-detail{padding:18px;} .visual-card .topic-icon{width:84px;height:84px;font-size:52px;} }
