@@ -20,3 +20,9 @@ npm run dev
 Para compilar: `npm run build`.
 
 La información es educativa y no sustituye una consulta individual con profesionales de salud.
+
+
+## Versión 3.5 – Biblioteca anatómica por imágenes independientes
+- Se separaron las ilustraciones de cuerpo general, sistema reproductor femenino y sistema reproductor masculino en archivos PNG independientes dentro de `public/`.
+- En Vista general y Anatomía, cada ilustración tiene una tarjeta seleccionable y muestra su propia imagen y explicación.
+- Se mantiene la navegación y el contenido de Autocuidado y Salud sexual.
