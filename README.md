@@ -1,27 +1,18 @@
-# Sexualidad sin barreras — versión 1.2
+# Sexualidad Sin Barreras – versión ilustrada 2.0
 
-Aplicación educativa interactiva para personas adultas con discapacidad física.
+Aplicación educativa accesible sobre el derecho a recibir información de salud sexual y reproductiva para personas adultas con discapacidad física.
 
-## Funciones nuevas
-- Lectura en voz alta de los módulos (voz disponible en el navegador), pausa y detener.
-- Tres situaciones interactivas con decisiones y retroalimentación.
-- Seguimiento local del avance de módulos y situaciones, sin cuenta.
-- Indicador de progreso.
-- Controles de tamaño de texto y alto contraste.
-- Cuestionario de seis preguntas.
-- Diseño adaptable y navegación accesible básica.
+## Incluye
+- Diseño renovado con ilustración inclusiva y paleta violeta, rosa y tonos pastel.
+- Cinco módulos educativos, situaciones interactivas, evaluación y fuentes.
+- Lectura en voz alta, controles de tamaño de texto y alto contraste.
+- Seguimiento local del progreso mediante el navegador.
+- Diseño adaptable a móvil y escritorio.
 
-## Desarrollo
-Requiere Node.js 18 o superior:
-```bash
-npm install
-npm run dev
-npm run build
-```
-En Vercel: preset Vite, build `npm run build`, output `dist`.
+## Publicación en Vercel
+1. Descomprime el ZIP.
+2. Sube/reemplaza en GitHub los archivos y carpetas incluidos, conservando la estructura `src/` y `public/`.
+3. Confirma el commit en la rama `main`.
+4. Vercel debe iniciar un nuevo despliegue automáticamente.
 
-## Persistencia
-El progreso se guarda en el almacenamiento local del navegador del dispositivo. No se sincroniza entre dispositivos ni constituye un registro académico.
-
-## Nota
-La lectura en voz alta depende de Speech Synthesis disponible en el navegador y el sistema operativo. Se recomienda probar con usuarios reales y tecnologías de asistencia antes de presentar el recurso como plenamente accesible.
+Comandos locales: `npm install` y `npm run build`.
