@@ -65,57 +65,14 @@ function V3Features({page,go}){
    <button className={'visual-card '+(bodyPart==='intimidad'?'chosen':'')} onClick={()=>setBodyPart('intimidad')}><svg viewBox="0 0 180 190" role="img" aria-label="Símbolo de bienestar e intimidad"><path d="M90 151 C55 125 30 102 37 72 C44 42 78 43 90 68 C102 43 136 42 143 72 C150 102 125 125 90 151Z"/><path d="M90 62 V139 M57 98 H123"/></svg><b>Intimidad y bienestar</b><span>Respeto y autonomía</span></button>
   </div>}
   {body==='anatomia'&&<>
-   <div className="anatomy-tabs">{[['piel','Cuerpo general'],['femenino','Sistema reproductor femenino'],['masculino','Sistema reproductor masculino']].map(([v,l])=><button key={v} className={bodyPart===v?'active':''} onClick={()=>setBodyPart(v)}>{l}</button>)}</div>
-   <div className="anatomy-board">
-    {bodyPart==='piel'&&<svg viewBox="0 0 680 340" role="img" aria-label="Esquema frontal del cuerpo humano con cabeza, tórax, abdomen, pelvis y extremidades">
-      <circle cx="260" cy="48" r="27"/>
-      <path d="M220 88 Q260 70 300 88 L318 180 L290 188 L285 145 L285 226 L305 310 L270 310 L260 238 L250 310 L215 310 L235 226 L235 145 L230 188 L202 180Z"/>
-      <path d="M220 96 L168 202 M300 96 L352 202" fill="none"/>
-      <path d="M238 112 Q260 100 282 112 L282 170 Q260 183 238 170Z" fill="#e6b7d9"/>
-      <path d="M246 190 Q260 178 274 190 L274 218 Q260 230 246 218Z" fill="#e6b7d9"/>
-      <g stroke="#8a35a4" strokeWidth="2" fill="none"><path d="M282 137 H425 M274 204 H425 M220 170 H110 M260 225 V270"/></g>
-      <g fill="#54216f" fontSize="15" fontWeight="600"><text x="435" y="142">Tórax</text><text x="435" y="209">Abdomen</text><text x="25" y="175">Extremidades</text><text x="270" y="285">Pelvis</text></g>
-    </svg>}
-    {bodyPart==='femenino'&&<svg viewBox="0 0 680 340" role="img" aria-label="Esquema frontal del sistema reproductor femenino con ovarios, trompas uterinas, útero, cuello uterino y vagina">
-      <g fill="none" stroke="#8d55a5" strokeWidth="9" strokeLinecap="round">
-        <path d="M270 125 C235 90 195 93 165 120 C150 132 144 143 138 151"/>
-        <path d="M310 125 C345 90 385 93 415 120 C430 132 436 143 442 151"/>
-      </g>
-      <g fill="#d6a5e5" stroke="#873c9d" strokeWidth="3">
-        <ellipse cx="128" cy="160" rx="22" ry="29"/><ellipse cx="452" cy="160" rx="22" ry="29"/>
-      </g>
-      <g fill="#e7a9c9" stroke="#873c9d" strokeWidth="4" strokeLinejoin="round">
-        <path d="M290 116 C264 137 251 163 254 194 C256 222 270 240 290 250 L290 270 L310 270 L310 250 C330 240 344 222 346 194 C349 163 336 137 310 116 Q300 106 290 116Z"/>
-        <path d="M290 250 L290 270 Q300 281 310 270 L310 250Z"/>
-      </g>
-      <path d="M300 279 V318" stroke="#873c9d" strokeWidth="13" strokeLinecap="round"/>
-      <g stroke="#8a35a4" strokeWidth="2" fill="none">
-        <path d="M128 160 H65 M175 122 H65 M335 164 H500 M310 260 H500 M300 300 H500"/>
-      </g>
-      <g fill="#54216f" fontSize="15" fontWeight="600">
-        <text x="12" y="155">Ovario</text><text x="12" y="115">Trompa uterina</text>
-        <text x="510" y="169">Útero</text><text x="510" y="265">Cuello uterino</text><text x="510" y="305">Vagina</text>
-      </g>
-    </svg>}
-    {bodyPart==='masculino'&&<svg viewBox="0 0 680 340" role="img" aria-label="Esquema frontal simplificado del sistema reproductor masculino con vejiga, conductos deferentes, próstata, uretra, pene, testículos y escroto">
-      <path d="M260 65 Q300 35 340 65 Q354 82 346 111 Q300 130 254 111 Q246 82 260 65Z" fill="#d6a5e5" stroke="#873c9d" strokeWidth="4"/>
-      <path d="M270 117 Q245 145 255 171 Q270 188 300 188 Q330 188 345 171 Q355 145 330 117" fill="#e7a9c9" stroke="#873c9d" strokeWidth="4"/>
-      <path d="M275 188 Q270 205 270 220 L270 286 Q300 306 330 286 L330 220 Q330 205 325 188" fill="#e7a9c9" stroke="#873c9d" strokeWidth="4"/>
-      <path d="M300 117 V287" fill="none" stroke="#8b35a5" strokeWidth="5"/>
-      <path d="M260 270 Q230 248 222 276 L222 296 M340 270 Q370 248 378 276 L378 296" fill="none" stroke="#873c9d" strokeWidth="7"/>
-      <ellipse cx="222" cy="300" rx="20" ry="27" fill="#d6a5e5" stroke="#873c9d" strokeWidth="4"/>
-      <ellipse cx="378" cy="300" rx="20" ry="27" fill="#d6a5e5" stroke="#873c9d" strokeWidth="4"/>
-      <path d="M222 273 C205 220 230 175 260 150 M378 273 C395 220 370 175 340 150" fill="none" stroke="#8d55a5" strokeWidth="6"/>
-      <g stroke="#8a35a4" strokeWidth="2" fill="none">
-        <path d="M340 80 H480 M345 153 H480 M330 202 H480 M300 250 H480 M378 300 H480"/>
-      </g>
-      <g fill="#54216f" fontSize="14" fontWeight="600">
-        <text x="490" y="85">Vejiga urinaria</text><text x="490" y="158">Conductos deferentes</text>
-        <text x="490" y="207">Próstata</text><text x="490" y="255">Uretra y pene</text><text x="490" y="305">Testículos y escroto</text>
-      </g>
-    </svg>}
+   <figure className="anatomy-infographic">
+    <img src="/biblioteca-anatomia.png" alt="Infografía educativa con figuras del cuerpo humano y esquemas del sistema reproductor femenino y masculino, con estructuras anatómicas identificadas." />
+    <figcaption>Infografía educativa: cuerpo general y sistemas reproductores femenino y masculino.</figcaption>
+   </figure>
+   <div className="anatomy-tabs" aria-label="Consultar explicación anatómica">
+    {[['piel','Cuerpo general'],['femenino','Sistema reproductor femenino'],['masculino','Sistema reproductor masculino']].map(([v,l])=><button key={v} className={bodyPart===v?'active':''} onClick={()=>setBodyPart(v)}>{l}</button>)}
    </div>
-   <p className="diagram-note">Esquemas simplificados con fines educativos. No representan todas las variaciones anatómicas ni sustituyen una explicación profesional.</p>
+   <p className="diagram-note">Selecciona una categoría para consultar su explicación. La infografía es un recurso educativo general y no sustituye la orientación de profesionales de salud.</p>
   </>}
   {body==='autocuidado'&&<div className="visual-grid">
    <div className="visual-card static"><svg viewBox="0 0 180 150" role="img" aria-label="Manos y agua para higiene"><path d="M48 96 Q35 75 48 58 Q60 44 70 62 L77 79 L77 38 Q77 24 88 24 Q99 24 99 38 V72 L106 50 Q112 38 122 44 Q132 50 126 62 L116 100 Q108 124 83 126 Q61 126 48 96Z"/><path d="M20 32 Q35 15 50 32 M130 25 Q145 8 160 25" fill="none" stroke="#8b35a5" strokeWidth="5"/></svg><b>Higiene personal</b><span>Rutinas adaptadas y privacidad</span></div>

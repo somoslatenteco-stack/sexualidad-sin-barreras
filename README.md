@@ -45,3 +45,6 @@ El contenido es educativo y no sustituye valoración, diagnóstico ni atención 
 - En Anatomía permite cambiar entre cuerpo general y esquemas simplificados de los sistemas reproductores femenino y masculino.
 - Los elementos seleccionables actualizan explicaciones en pantalla y cuentan con etiquetas accesibles.
 - Los diagramas son esquemáticos, no representan todas las variaciones anatómicas y no sustituyen la orientación profesional.
+
+
+Versión 3.3: reemplaza los diagramas anatómicos SVG esquemáticos por una infografía ilustrada integrada como recurso visual estático y adaptable.

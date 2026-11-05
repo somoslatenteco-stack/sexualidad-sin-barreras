@@ -43,3 +43,9 @@ nav button:focus-visible,.listen button:focus-visible,.tools button:focus-visibl
 .anatomy-board svg text{stroke:none;fill:#54216f;font-family:Arial,sans-serif}
 .diagram-note{font-size:12px;line-height:1.5;color:#756581;margin:10px 2px 0}
 @media(max-width:650px){.visual-library{padding:14px}.visual-intro{grid-template-columns:1fr;text-align:center;justify-items:center}.visual-grid{grid-template-columns:1fr}.visual-card{min-height:190px}.anatomy-tabs{flex-direction:column}.anatomy-tabs button{text-align:left}.anatomy-board{min-height:200px;padding:8px}.anatomy-board svg{max-height:220px}}
+
+/* Infografía anatómica ilustrada */
+.anatomy-infographic{margin:14px 0 8px;background:#fff;border:1px solid #e6d4ef;border-radius:22px;padding:12px;overflow:hidden}
+.anatomy-infographic img{display:block;width:100%;height:auto;max-width:100%;border-radius:14px}
+.anatomy-infographic figcaption{padding:10px 8px 2px;color:#76518b;font-size:.88rem;text-align:center}
+@media(max-width:650px){.anatomy-infographic{padding:6px;border-radius:14px}.anatomy-infographic figcaption{font-size:.78rem}}
