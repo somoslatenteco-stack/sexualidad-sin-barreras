@@ -1,38 +1,27 @@
-# Sexualidad sin barreras
+# Sexualidad sin barreras — versión 1.2
 
-Aplicación educativa interactiva sobre información, autonomía y derechos sexuales y reproductivos para personas adultas con discapacidad física.
+Aplicación educativa interactiva para personas adultas con discapacidad física.
 
-## Requisitos
-- Node.js 18 o superior
-- npm
+## Funciones nuevas
+- Lectura en voz alta de los módulos (voz disponible en el navegador), pausa y detener.
+- Tres situaciones interactivas con decisiones y retroalimentación.
+- Seguimiento local del avance de módulos y situaciones, sin cuenta.
+- Indicador de progreso.
+- Controles de tamaño de texto y alto contraste.
+- Cuestionario de seis preguntas.
+- Diseño adaptable y navegación accesible básica.
 
-## Ejecutar localmente
+## Desarrollo
+Requiere Node.js 18 o superior:
 ```bash
 npm install
 npm run dev
-```
-Abre la dirección local que Vite indique en la terminal.
-
-## Crear versión de producción
-```bash
 npm run build
-npm run preview
 ```
+En Vercel: preset Vite, build `npm run build`, output `dist`.
 
-## Publicar en Vercel
-1. Sube este proyecto a un repositorio de GitHub.
-2. Entra a https://vercel.com e inicia sesión con GitHub.
-3. Selecciona **Add New → Project** e importa el repositorio.
-4. Framework: Vite. Build command: `npm run build`. Output directory: `dist`.
-5. Pulsa **Deploy**.
+## Persistencia
+El progreso se guarda en el almacenamiento local del navegador del dispositivo. No se sincroniza entre dispositivos ni constituye un registro académico.
 
-## Accesibilidad incluida en el prototipo
-- Navegación con etiquetas y controles de teclado.
-- Enlace para saltar al contenido.
-- Contraste visual y tipografía legible.
-- Diseño adaptable a celular, tableta y computador.
-- Respeto por la preferencia de movimiento reducido.
-- Cuestionario con retroalimentación.
-
-## Nota académica
-Este es un prototipo inicial. Antes de la entrega, revisar los contenidos con las fuentes del curso y realizar pruebas de accesibilidad con personas usuarias y/o herramientas de evaluación. No reemplaza orientación profesional ni atención en salud.
+## Nota
+La lectura en voz alta depende de Speech Synthesis disponible en el navegador y el sistema operativo. Se recomienda probar con usuarios reales y tecnologías de asistencia antes de presentar el recurso como plenamente accesible.
